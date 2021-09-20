@@ -1,8 +1,111 @@
-img-holder{
-  background-color: black;
-  width: 50px;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b993d6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+  background-size: cover;
+  background-position: right;
+  
+}
+#side-bar{
+  position: absolute;
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  top: 2vh;
+  left: 50px;
+  /* background-color: blue; */
+}
+
+#right-bar{
+  position: absolute;
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  top: 2vh;
+  right: 50px;
+  /* background-color: blue; */
+}
+
+main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(163, 92, 150);
+  background-size: cover;
+  width: 28vw;
+  height: 98vh;
+  border-radius: 8px;
+}
+#screen{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 241, 241);
+  width: 20vw;
+  height:60vh ;
+  border-radius: 4px;
+  text-align: center;
+  border: black 30px solid;
+}
+#text-box{
+  margin-top: 10px;
+  border: black 2px solid;
+  border-radius: 1px;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 5px;
+  font-size: 14px;
+}
+#img-holder{
+  width: 14vw;
+  height: 34vh;
+  /* background-image: url("https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png");  */
+  background-image: url('https://img.favpng.com/5/3/24/ash-ketchum-pokxe9mon-go-pokxe9mon-ruby-and-sapphire-pikachu-misty-png-favpng-yk4QpKB0R2FnEi4aSayacxA6C_t.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#btn-holder{
+  display: none;
+}
+#caught-pokemon{
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  border: 1px solid grey;
+  line-height: 5px;
+}
+#caught-pokemon h2{
+  text-decoration: underline;
+}
+button{
+  border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#catchBtn{
+  border-radius: 50px;
   height: 50px;
+  border: 2px solid black;
+  
 }
-h1{
-  color: red;
-}
+/*this link is a throwing pokeball gif
+ https://media2.giphy.com/media/AE6BTS3QZ5OdUI9zxT/200w.webp?cid=ecf05e47psxmi9btf424ctvvcnreoh1zby1z0fw1qe1mspol&rid=200w.webp&ct=g */
+
+ /* encountering a wild pokemon
+ https://thumbs.gfycat.com/CheapEarlyAmericanwigeon.webp
+  */
+
+  /* pikachu attacking - use on attack choice
+   https://thumbs.gfycat.com/AridArtisticBassethound.webp */
