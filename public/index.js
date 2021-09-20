@@ -1,3 +1,4 @@
+//target html elements
 const pokePic = document.getElementById('img-holder')
 const appearMsg = document.getElementById('appearTxt')
 const choiceBtns = document.getElementById('btn-holder')
@@ -8,11 +9,18 @@ const screen = document.getElementById('screen')
 const textBox = document.getElementById('text-box')
 const catchBtn = document.getElementById('catchBtn')
 const fightBtn = document.getElementById('fightBtn')
+
+//global variables
 let pokeName = ''
 let playerXp = 0
 let sprite=''
 let playerLvl = 0
 const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
+
+
+//functions
+
+// search for pokemon
       document.getElementById("searchBtn").onclick = function () {
         let rand = Math.floor(Math.random() * 890);
         axios.get(`https://pokeapi.co/api/v2/pokemon/${rand}`)
