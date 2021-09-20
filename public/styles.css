@@ -15,12 +15,13 @@ body{
   width: 15vw;
   display: flex;
   flex-direction: column;
+  text-align: center;
   top: 2vh;
   left: 50px;
   /* background-color: blue; */
 }
 
-#right-bar{
+/* #right-bar{
   position: absolute;
   height: 100vh;
   width: 15vw;
@@ -28,8 +29,9 @@ body{
   flex-direction: column;
   top: 2vh;
   right: 50px;
-  /* background-color: blue; */
-}
+  
+} 
+*/
 
 main{
   position: relative;
@@ -112,6 +114,7 @@ h1{
 #caught-pokemon h2{
   text-decoration: underline;
 }
+
 button{
   border-radius: 4px;
   margin: 10px;

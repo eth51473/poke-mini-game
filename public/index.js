@@ -36,7 +36,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
               
             });
       };
-      
+
       //change visibility of pokemon storage
       document.getElementById('storageBtn').addEventListener('click',viewStorage)
       function viewStorage() {
@@ -98,13 +98,14 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
               `url('${sprite}')`
               appearMsg.textContent = `${pokeName} has been defeated!`
               setTimeout(() => {
+                appearMsg.textContent = `you have earned ${battleXp} xp`
                 pokePic.style.backgroundImage = 
               `url('https://img.favpng.com/5/3/24/ash-ketchum-pokxe9mon-go-pokxe9mon-ruby-and-sapphire-pikachu-misty-png-favpng-yk4QpKB0R2FnEi4aSayacxA6C_t.jpg')`
                 
               },1000)
               let battleXp = Math.floor((Math.random() * 100)+50);
               playerXp += battleXp
-              appearMsg.textContent = `you have earned ${battleXp} xp`
+              
               for (let i = 0; i<levels.length; i++){
                 if(playerXp < levels[i]){
                   lvl.textContent = `Player lvl: ${i-1}`
