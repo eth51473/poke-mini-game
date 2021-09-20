@@ -36,7 +36,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(163, 92, 150);
+  background-color: rgb(92, 89, 91);
   background-size: cover;
   width: 28vw;
   height: 98vh;
@@ -50,26 +50,32 @@ main{
   justify-content: center;
   background-color: rgb(243, 241, 241);
   width: 20vw;
-  height:60vh ;
+  height:40vh ;
   border-radius: 4px;
   text-align: center;
   border: black 30px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #text-box{
+  height: 50px;
   margin-top: 10px;
   border: black 2px solid;
   border-radius: 1px;
   width: 100%;
-  margin-bottom: 0px;
-  padding: 5px;
-  font-size: 14px;
+  margin: 0px;
+  padding: 1px;
+  font-size: 12px;
+  line-height: 1px;
 }
 #img-holder{
   width: 14vw;
   height: 34vh;
   /* background-image: url("https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png");  */
   background-image: url('https://img.favpng.com/5/3/24/ash-ketchum-pokxe9mon-go-pokxe9mon-ruby-and-sapphire-pikachu-misty-png-favpng-yk4QpKB0R2FnEi4aSayacxA6C_t.jpg');
-  background-size: cover;
+  background-size: 70%;
+  background-position: top;
+  background-position: justify;
   background-repeat: no-repeat;
 }
 #btn-holder{

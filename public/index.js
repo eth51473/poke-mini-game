@@ -4,6 +4,8 @@ const choiceBtns = document.getElementById('btn-holder')
 const pokeStorage = document.getElementById('caught-pokemon')
 const searchBtn = document.getElementById('searchBtn')
 const lvl = document.getElementById('lvl')
+const screen = document.getElementById('screen')
+const textBox = document.getElementById('text-box')
 let pokeName = ''
 let playerXp = 0
 let sprite=''
@@ -13,9 +15,13 @@ const levels = [0,100,500,1000,2000,6000,10000]
         let rand = Math.floor(Math.random() * 890);
         axios.get(`https://pokeapi.co/api/v2/pokemon/${rand}`)
             .then(function (response) {
-              pokePic.style.backgroundImage = `url('https://www.washingtonpost.com/resizer/K9D1z0UPiXWsQ3fMVf6sZ0aVuEM=/767x0/smart/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/UAGGWS3KVAYKXBPOYNIT3YNQ3Y.gif')`
-              pokePic.style.width = '20vw'
+              screen.style.backgroundImage = `url('https://www.digitaleidoscope.com//wp-content/uploads/2015/06/ps_02_04.gif')`
+              // pokePic.style.width = '20vw'
+              pokePic.style.backgroundImage = 'none'
+              textBox.style.display = 'none'
               setTimeout(() => {
+                textBox.style.display = 'inline'
+                screen.style.backgroundImage = 'none'
                 pokePic.style.width = '16vw'
                 pokeName = response.data.name
                 sprite = response.data.sprites.front_default
@@ -23,7 +29,7 @@ const levels = [0,100,500,1000,2000,6000,10000]
                 `url('${sprite}')`
                 appearMsg.textContent = `${pokeName} has appeared`
                 searchBtn.textContent = "run away"
-                choiceBtns.style.display = 'inline' }, 1000);
+                choiceBtns.style.display = 'inline' }, 1500);
               
             });
       };
@@ -41,8 +47,13 @@ const levels = [0,100,500,1000,2000,6000,10000]
       document.getElementById('catchBtn').addEventListener('click',catchPokemon)
       function catchPokemon() {
         if(appearMsg.textContent.endsWith("appeared")){
-         pokePic.style.backgroundImage = `url('https://media2.giphy.com/media/AE6BTS3QZ5OdUI9zxT/200w.webp?cid=ecf05e47psxmi9btf424ctvvcnreoh1zby1z0fw1qe1mspol&rid=200w.webp&ct=g')`
-         setTimeout(() => { pokePic.style.backgroundImage = `url('https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png')` }, 750);
+          screen.style.backgroundImage = `url('https://media2.giphy.com/media/AE6BTS3QZ5OdUI9zxT/200w.webp?cid=ecf05e47psxmi9btf424ctvvcnreoh1zby1z0fw1qe1mspol&rid=200w.webp&ct=g')`
+          textBox.style.display = 'none'
+          pokePic.style.backgroundImage = 'none'
+         setTimeout(() => { 
+          textBox.style.display = 'inline'
+          screen.style.backgroundImage ='none'
+          pokePic.style.backgroundImage = `url('https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png')` }, 750);
          searchBtn.textContent = "Search"
          choiceBtns.style.display = 'none'
         let newPoke = document.createElement('h3')
@@ -52,7 +63,7 @@ const levels = [0,100,500,1000,2000,6000,10000]
         let catchXp = Math.floor(Math.random() * 50);
         playerXp += catchXp
         setTimeout(() => {
-          appearMsg.textContent = `you have earned ${playerXp} xp`
+          appearMsg.textContent = `you have earned ${catchXp} xp`
         },1800)
         for (let i = 0; i<levels.length; i++){
           if(playerXp < levels[i]){
@@ -71,9 +82,13 @@ const levels = [0,100,500,1000,2000,6000,10000]
       function fightPokemon() {
         if(appearMsg.textContent.endsWith("appeared")){
           
-          pokePic.style.backgroundImage = `url('https://thumbs.gfycat.com/AridArtisticBassethound.webp')`
+          screen.style.backgroundImage = `url('https://thumbs.gfycat.com/AridArtisticBassethound.webp')`
+          textBox.style.display = 'none'
+          pokePic.style.backgroundImage = 'none'
               pokePic.style.width = '25vw'
               setTimeout(() => {
+                textBox.style.display = 'inline'
+                screen.style.backgroundImage ='none'
               pokePic.style.backgroundImage = 
               `url('${sprite}')`
               appearMsg.textContent = `${pokeName} has been defeated!`
