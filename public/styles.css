@@ -100,7 +100,7 @@ h1{
   top: -40px
 }
 #caught-pokemon{
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 2px;
   justify-content: center;

@@ -37,6 +37,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
             });
       };
       
+      //change visibility of pokemon storage
       document.getElementById('storageBtn').addEventListener('click',viewStorage)
       function viewStorage() {
         if(pokeStorage.style.display =='none'){
@@ -59,7 +60,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
           screen.style.backgroundImage ='none'
           pokePic.style.backgroundImage = `url('https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png')` }, 750);
          searchBtn.textContent = "Search"
-         
+         //add pokemon to storage
         let newPoke = document.createElement('h3')
         newPoke.textContent = pokeName
         pokeStorage.appendChild(newPoke)
