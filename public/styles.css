@@ -55,7 +55,7 @@ main{
   text-align: center;
   border: black 30px solid;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
 }
 #text-box{
   height: 50px;
@@ -78,8 +78,26 @@ main{
   background-position: justify;
   background-repeat: no-repeat;
 }
+h1{
+  position: relative;
+  left:-90px;
+  bottom: 250px;
+  font-size: 180px;
+}
 #btn-holder{
-  display: none;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  right: -100px;
+  margin: 0px;
+  margin-top: 40px;
+  line-height: 5px;
+  justify-items: 0px;
+}
+#fightBtn{
+  position: relative;
+  margin-left: -10px;
+  top: -40px
 }
 #caught-pokemon{
   display: flex;
@@ -99,13 +117,18 @@ button{
   margin: 10px;
   padding: 5px;
 }
-
-#catchBtn{
+button:hover{
+  cursor: pointer;
+  
+}
+.btn{
   border-radius: 50px;
   height: 50px;
   border: 2px solid black;
+  padding: 6px;
   
 }
+
 /*this link is a throwing pokeball gif
  https://media2.giphy.com/media/AE6BTS3QZ5OdUI9zxT/200w.webp?cid=ecf05e47psxmi9btf424ctvvcnreoh1zby1z0fw1qe1mspol&rid=200w.webp&ct=g */
 
