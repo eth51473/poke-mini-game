@@ -89,6 +89,7 @@ h1 {
   position: relative;
   margin-left: -10px;
   top: -40px;
+  padding: 8px;
 }
 #caught-pokemon {
   display: none;
@@ -127,9 +128,6 @@ button:hover {
   height: 50px;
   border: 2px solid black;
   padding: 6px;
-}
-#fightBtn {
-  padding: 8px;
 }
 h4 {
   font-size: 32px;
