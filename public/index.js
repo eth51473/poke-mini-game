@@ -5,6 +5,7 @@ const choiceBtns = document.getElementById('btn-holder')
 const pokeStorage = document.getElementById('caught-pokemon')
 const searchBtn = document.getElementById('searchBtn')
 const lvl = document.getElementById('lvl')
+const nextLvl = document.getElementById('nextlvl')
 const screen = document.getElementById('screen')
 const textBox = document.getElementById('text-box')
 const catchBtn = document.getElementById('catchBtn')
@@ -16,7 +17,7 @@ let playerXp = 0
 let sprite=''
 let playerLvl = 0
 const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
-
+let nextlv = 50
 
 //functions
 
@@ -31,7 +32,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
               textBox.style.visibility = 'hidden'
               setTimeout(() => {
                 textBox.style.visibility = 'visible'
-                screen.style.backgroundImage = 'none'
+                screen.style.backgroundImage = `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d874gjl-59e79083-fec5-4234-8879-2aa8afd7f9f4.png/v1/fill/w_800,h_480,q_80,strp/or_as_battle_background_1b_by_phoenixoflight92_d874gjl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDgwIiwicGF0aCI6IlwvZlwvMmZiMjgyMWEtMTQwNi00YTFkLTliMDQtNjY2OGYyNzhlOTQ0XC9kODc0Z2psLTU5ZTc5MDgzLWZlYzUtNDIzNC04ODc5LTJhYThhZmQ3ZjlmNC5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NS-iTazmNwqqoU7C3flPY_Cmhb-7e4zP0vURfSoBQ44')`
                 pokePic.style.width = '16vw'
                 pokeName = response.data.name
                 sprite = response.data.sprites.front_default
@@ -67,7 +68,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
           textBox.style.visibility = 'visible'
           screen.style.backgroundImage ='none'
           pokePic.style.backgroundImage = `url('https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png')` }, 750);
-         searchBtn.textContent = "Search"
+         searchBtn.textContent = "Find Pokemon"
          //add pokemon to storage
         let newPoke = document.createElement('h3')
         newPoke.textContent = pokeName
@@ -81,6 +82,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
         for (let i = 0; i<levels.length; i++){
           if(playerXp < levels[i]){
             lvl.textContent = `Player lvl: ${i-1}`
+            nextLvl.textContent = `XP to next lvl:${levels[i]-playerXp}`
             return
           }
         }
@@ -108,7 +110,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
               setTimeout(() => {
                 appearMsg.textContent = `you have earned ${battleXp} xp`
                 pokePic.style.backgroundImage = 
-              `url('https://img.favpng.com/5/3/24/ash-ketchum-pokxe9mon-go-pokxe9mon-ruby-and-sapphire-pikachu-misty-png-favpng-yk4QpKB0R2FnEi4aSayacxA6C_t.jpg')`
+              `url('https://www.seekpng.com/png/detail/10-100282_pogchamp-png-pokemon-trainer-red.png')`
                 
               },1000)
               let battleXp = Math.floor((Math.random() * 100)+50);
@@ -117,6 +119,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
               for (let i = 0; i<levels.length; i++){
                 if(playerXp < levels[i]){
                   lvl.textContent = `Player lvl: ${i-1}`
+                  nextLvl.textContent = `XP to next lvl:${levels[i]-playerXp}`
                   return
                 }
               }
@@ -124,7 +127,7 @@ const levels = [0,50,100,175,250,500,1000,2000,6000,10000]
             },6200);
           
               }
-              searchBtn.textContent = "Search"
+              searchBtn.textContent = "Find Pokemon"
               pokePic.style.width = '16vw'
       }
 

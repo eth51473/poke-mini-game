@@ -74,7 +74,7 @@ main{
   width: 14vw;
   height: 34vh;
   /* background-image: url("https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png");  */
-  background-image: url('https://img.favpng.com/5/3/24/ash-ketchum-pokxe9mon-go-pokxe9mon-ruby-and-sapphire-pikachu-misty-png-favpng-yk4QpKB0R2FnEi4aSayacxA6C_t.jpg');
+  background-image: url('https://www.seekpng.com/png/detail/10-100282_pogchamp-png-pokemon-trainer-red.png');
   background-size: 70%;
   background-position: top;
   background-position: justify;
@@ -134,6 +134,10 @@ button:hover{
 h4{
   font-size: 32px;
   margin-bottom: 0px;
+}
+h5{
+  margin: 5px;
+  font-size: 15px;
 }
 
 /*this link is a throwing pokeball gif
