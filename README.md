@@ -1,5 +1,4 @@
 ## Pokemon Mini Game
-### Check it out [Here](https://poke-minigame.herokuapp.com/)
 ### Description
 #### This is a small browser game where you can find new pokemon and either choose to capture them or to fight against them. You can keep track of the pokemon you capture and the experience you gain as you play.
 
