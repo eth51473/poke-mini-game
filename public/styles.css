@@ -119,13 +119,15 @@ button{
   border-radius: 4px;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(92, 89, 91);
   
 }
 #btn-holder button{
   background-color: rgb(94, 91, 91);
-  border-radius: 60%px;
-  box-shadow: 2px 2px 2px black, inset 2px 2px 2px darkgray, -1px -1px 2px black;
+  border-radius: 60%; 
+  box-shadow: 2px 2px 2px rgb(15, 15, 15), inset 2px 2px 2px rgb(202, 202, 202), -1px -1px 2px rgb(17, 17, 17);
 }
+
 button:hover{
   cursor: pointer;
   
