@@ -118,7 +118,13 @@ h1{
 button{
   border-radius: 4px;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
+  
+}
+#btn-holder button{
+  background-color: rgb(94, 91, 91);
+  border-radius: 60%px;
+  box-shadow: 2px 2px 2px black, inset 2px 2px 2px darkgray, -1px -1px 2px black;
 }
 button:hover{
   cursor: pointer;
@@ -138,6 +144,9 @@ h4{
 h5{
   margin: 5px;
   font-size: 15px;
+}
+#fightBtn{
+  padding: 8px;
 }
 
 /*this link is a throwing pokeball gif
