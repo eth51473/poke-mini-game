@@ -82,7 +82,7 @@ let nextlv = 50
         for (let i = 0; i<levels.length; i++){
           if(playerXp < levels[i]){
             lvl.textContent = `Player lvl: ${i-1}`
-            nextLvl.textContent = `XP to next lvl:${levels[i]-playerXp}`
+            nextLvl.textContent = `XP to next lvl: ${levels[i]-playerXp}`
             return
           }
         }
@@ -119,7 +119,7 @@ let nextlv = 50
               for (let i = 0; i<levels.length; i++){
                 if(playerXp < levels[i]){
                   lvl.textContent = `Player lvl: ${i-1}`
-                  nextLvl.textContent = `XP to next lvl:${levels[i]-playerXp}`
+                  nextLvl.textContent = `XP to next lvl: ${levels[i]-playerXp}`
                   return
                 }
               }
