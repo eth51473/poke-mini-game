@@ -1,15 +1,18 @@
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #b993d6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
+  background: #b993d6; 
+  background: -webkit-linear-gradient(
+    to right,
+    #b993d6,
+    #8ca6db
+  ); 
   background: linear-gradient(to right, #b993d6, #8ca6db);
   background-size: cover;
   background-position: right;
-  
 }
-#side-bar{
+#side-bar {
   position: absolute;
   height: 100vh;
   width: 15vw;
@@ -18,22 +21,9 @@ body{
   text-align: center;
   top: 2vh;
   left: 50px;
-  /* background-color: blue; */
 }
 
-/* #right-bar{
-  position: absolute;
-  height: 100vh;
-  width: 15vw;
-  display: flex;
-  flex-direction: column;
-  top: 2vh;
-  right: 50px;
-  
-} 
-*/
-
-main{
+main {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -44,7 +34,7 @@ main{
   height: 98vh;
   border-radius: 8px;
 }
-#screen{
+#screen {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -52,14 +42,14 @@ main{
   justify-content: center;
   background-color: rgb(243, 241, 241);
   width: 20vw;
-  height:40vh ;
+  height: 40vh;
   border-radius: 4px;
   text-align: center;
   border: black 30px solid;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
-#text-box{
+#text-box {
   height: 50px;
   margin-top: 10px;
   border: black 2px solid;
@@ -70,23 +60,22 @@ main{
   font-size: 12px;
   line-height: 1px;
 }
-#img-holder{
+#img-holder {
   width: 14vw;
   height: 34vh;
-  /* background-image: url("https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png");  */
-  background-image: url('https://www.seekpng.com/png/detail/10-100282_pogchamp-png-pokemon-trainer-red.png');
+  background-image: url("https://www.seekpng.com/png/detail/10-100282_pogchamp-png-pokemon-trainer-red.png");
   background-size: 70%;
   background-position: top;
   background-position: justify;
   background-repeat: no-repeat;
 }
-h1{
+h1 {
   position: relative;
-  left:-90px;
+  left: -90px;
   bottom: 250px;
   font-size: 180px;
 }
-#btn-holder{
+#btn-holder {
   display: inline-block;
   position: relative;
   top: 50px;
@@ -96,12 +85,12 @@ h1{
   line-height: 5px;
   justify-items: 0px;
 }
-#fightBtn{
+#fightBtn {
   position: relative;
   margin-left: -10px;
-  top: -40px
+  top: -40px;
 }
-#caught-pokemon{
+#caught-pokemon {
   display: none;
   flex-direction: column;
   margin: 2px;
@@ -111,55 +100,43 @@ h1{
   border: 1px solid grey;
   line-height: 5px;
 }
-#caught-pokemon h2{
+#caught-pokemon h2 {
   text-decoration: underline;
 }
-
-button{
+button {
   border-radius: 4px;
   margin: 10px;
   padding: 10px;
   background-color: rgb(92, 89, 91);
-  
 }
-#btn-holder button{
+#btn-holder button {
   background-color: rgb(94, 91, 91);
-  border-radius: 60%; 
-  box-shadow: 2px 2px 2px rgb(15, 15, 15), inset 2px 2px 2px rgb(202, 202, 202), -1px -1px 2px rgb(17, 17, 17);
+  border-radius: 60%;
+  box-shadow: 2px 2px 2px rgb(15, 15, 15), inset 2px 2px 2px rgb(202, 202, 202),
+    -1px -1px 2px rgb(17, 17, 17);
 }
-#btn-holder button:active{
-  box-shadow: 2px 2px 2px rgb(172, 172, 172), inset 2px 2px 2px rgb(167, 166, 166), -1px -1px 2px rgb(20, 20, 20);
+#btn-holder button:active {
+  box-shadow: 2px 2px 2px rgb(172, 172, 172),
+    inset 2px 2px 2px rgb(167, 166, 166), -1px -1px 2px rgb(20, 20, 20);
 }
-
-button:hover{
+button:hover {
   cursor: pointer;
-  
 }
-.btn{
+.btn {
   border-radius: 50px;
   height: 50px;
   border: 2px solid black;
   padding: 6px;
-  
 }
-h4{
+#fightBtn {
+  padding: 8px;
+}
+h4 {
   font-size: 32px;
   margin-bottom: 0px;
 }
-h5{
+h5 {
   margin: 5px;
   font-size: 15px;
 }
-#fightBtn{
-  padding: 8px;
-}
 
-/*this link is a throwing pokeball gif
- https://media2.giphy.com/media/AE6BTS3QZ5OdUI9zxT/200w.webp?cid=ecf05e47psxmi9btf424ctvvcnreoh1zby1z0fw1qe1mspol&rid=200w.webp&ct=g */
-
- /* encountering a wild pokemon
- https://thumbs.gfycat.com/CheapEarlyAmericanwigeon.webp
-  */
-
-  /* pikachu attacking - use on attack choice
-   https://thumbs.gfycat.com/AridArtisticBassethound.webp */

@@ -4,7 +4,7 @@
 #### This is a small browser game where you can find new pokemon and either choose to capture them or to fight against them. You can keep track of the pokemon you capture and the experience you gain as you play.
 
 ### Stack
-#### This project was built using html/css/javascript with an expressJS server. currently hosted on [Heroku](https://poke-minigame.herokuapp.com/)
+#### This project was built using HTML/CSS/JAVASCRIPT with an EXPRESSJS server. currently hosted on [Heroku](https://poke-minigame.herokuapp.com/)
 
 ### Features
 #### The current feature list includes
