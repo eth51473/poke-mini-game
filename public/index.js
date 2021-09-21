@@ -56,7 +56,7 @@ function catchPokemon() {
       textBox.style.visibility = "visible";
       screen.style.backgroundImage = "none";
       pokePic.style.backgroundImage = `url('https://www.freepnglogos.com/uploads/pokeball-png/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png')`;
-    }, 750);
+    }, 700);
     searchBtn.textContent = "Find Pokemon";
     let newPoke = document.createElement("h3");
     newPoke.textContent = pokeName;
