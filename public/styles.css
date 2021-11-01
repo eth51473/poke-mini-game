@@ -30,8 +30,8 @@ main {
   align-items: center;
   background-color: rgb(92, 89, 91);
   background-size: cover;
-  width: 28vw;
-  height: 98vh;
+  width: 350px;
+  height: 550px;
   border-radius: 8px;
 }
 #screen {
@@ -41,8 +41,8 @@ main {
   align-items: center;
   justify-content: center;
   background-color: rgb(243, 241, 241);
-  width: 20vw;
-  height: 40vh;
+  width: 250px;
+  height: 230px;
   border-radius: 4px;
   text-align: center;
   border: black 30px solid;
@@ -137,4 +137,6 @@ h5 {
   margin: 5px;
   font-size: 15px;
 }
-
+#storageh2{
+  line-height: 25px;
+}
